@@ -151,7 +151,7 @@ class NeuralNetwork{
 		for (int i=0; i<iterations; i++){
 			if (int((float)i/iterations*100)!=last_proc){
 				last_proc=int((float)i/iterations*100);
-				//println(last_proc+"% complete...");
+				println(last_proc+"% complete...");
 			}
 			for (int j=0; j<in.length; j++){
 				this.train(in[j],out[j]);
